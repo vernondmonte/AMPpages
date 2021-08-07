@@ -1,0 +1,74 @@
+<!doctype html>
+<html amp lang="en">
+  <head>
+
+    <style amp>
+        h1{
+
+            text-justify: auto;
+            -moz-text-decoration-color: brown;
+            margin: 1rem;
+        }
+        body{
+
+            color: rgb(81, 165, 42);
+        }
+    </style>
+
+<script async custom-element="amp-base-carousel" src='https://cdn.ampproject.org/v0/amp-base-carousel-0.1.js'></script>
+
+    <meta charset="utf-8">
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <title>Hello, AMPs</title>
+    <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+
+    <!-- AMP Analytics -->
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    
+
+    
+</head>
+  <body>
+    <h1 id="hello">Hello AMPHTML World!</h1>
+    <amp-img src="https://source.unsplash.com/random/600x400" height='400' width = '300'layout = 'responsive'></amp-img>
+
+    <amp-base-carousel width="600" height="400" layout="responsive">
+        <amp-img src="https://source.unsplash.com/Ji_G7Bu1MoM/600x400" width="600" height="400" layout="responsive"></amp-img>
+        <amp-img src="https://source.unsplash.com/4yCXNMLP9g8/600x400" width="600" height="400" layout="responsive"></amp-img>
+      </amp-base-carousel>
+      
+      <amp-base-carousel loop="true"  width="600" height="400" layout="responsive">
+        <amp-img src="https://source.unsplash.com/Ji_G7Bu1MoM/600x400" width="600" height="400" layout="responsive"></amp-img>
+        <amp-img src="https://source.unsplash.com/4yCXNMLP9g8/600x400" width="600" height="400" layout="responsive"></amp-img>
+        <amp-img src="https://source.unsplash.com/QrgRXH81DXk/600x400" width="600" height="400" layout="responsive"></amp-img>
+        <amp-img src="https://source.unsplash.com/8QJSi37vhms/600x400" width="600" height="400" layout="responsive"></amp-img>
+      </amp-base-carousel>
+
+      <!--add button-->>
+
+      <button id = 'vernzi' on ='tap:hello.hide'>
+          this is button
+      </button>
+
+      <button id='test' >Test</button>
+      <!-- Google Tag Manager -->
+      <amp-analytics config="https://www.googletagmanager.com/amp.json?id=GTM-NH7FTWR&gtm.url=SOURCE_URL" data-credentials="include">
+      <script type="application/json">
+        {
+          "vars": {
+            "var1": "red"
+           
+          }
+        }
+        </script>
+      ></amp-analytics>
+
+
+      <!--add button-->
+      <a href="http://127.0.0.1:5500/page2.html" class="button" id = "test2">non AMP page</a>
+
+
+  </body>
+</html>
